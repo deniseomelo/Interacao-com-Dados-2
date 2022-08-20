@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com dados 2</title>
+    <style>
+        body { font: 12pt Arial;}
+        button { font-size: 12pt; padding: 30px;}
+    </style>
+</head>
+<body>
+    <h1>Senac - TADS - Pw - 2 Semestre</h1>
+    <h2>Aula #2 - introdução ao JS</h2>
+    <h3>Trabalhando com Dados 2</h3>
+    <button onclick="iniciarInteracao()">Clique para começar</button>
+    <section id="resultado">
+        <p>Observe este ponto: aqui irá aparecer o resultado...</p>
+    </section>
+    <script>
+        function iniciarInteracao() {
+            let nome = window.prompt('Qual é seu nome?')
+            let res = window.document.getElementById('resultado')
+
+            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! Bem Vindo ao Curso PW do SENAC! &#x1F596;`
+        }
+    </script>
+
+
+    
+</body>
+</html>
